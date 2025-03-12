@@ -198,16 +198,85 @@ p.checkout {
     font-weight: bold;
 }
 
+/* Compre junto */
+.compre-junto {
+    width: 90%;
+    max-width: 1600px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.compre-junto h2 {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+}
+
+/* Linha ao lado do título */
+.compre-junto h2::after {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: black;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.produto-compre-junto {
+    background-color: #e5e5e5;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    max-width: 100%;
+}
+
+/* Ajustando imagens */
+.produto-compre-junto img {
+    width: 100%;
+    max-width: 180px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Nome do produto */
+.nome-produto {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Selo "NOVO" */
+.novo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 /* Ajustes para mobile */
 @media (max-width: 768px) {
 
-    /* Removendo scroll horizontal */
     body {
         overflow-x: hidden;
         width: 100%;
     }
 
-    /* Garantindo que o layout não ultrapasse a tela */
     .carrinho-container {
         display: flex;
         flex-direction: column;
@@ -217,13 +286,11 @@ p.checkout {
         padding: 10px;
     }
 
-    /* Ajuste da seção do carrinho */
     .carrinho {
         width: 100%;
         max-width: 100%;
     }
 
-    /* Ajustando os produtos no mobile */
     .produto {
         display: flex;
         flex-direction: column;
@@ -234,7 +301,6 @@ p.checkout {
         overflow: hidden;
     }
 
-    /* Garantindo que a imagem do produto não cause scroll */
     .produto .imagem {
         width: 100%;
         max-width: 100%;
@@ -248,7 +314,6 @@ p.checkout {
         max-width: 100%;
     }
 
-    /* Ajustes na Info do produto */
     .info {
         width: 100%;
         text-align: left;
@@ -266,7 +331,6 @@ p.checkout {
         margin-bottom: 5px;
     }
 
-    /* Preço fica fixo no canto direito no mobile */
     .preco {
         position: absolute;
         top: 10px;
@@ -275,7 +339,6 @@ p.checkout {
         white-space: nowrap;
     }
 
-    /* Quantidade e botão excluir alinhados no mobile */
     .actions {
         display: flex;
         flex-direction: column;
@@ -283,7 +346,6 @@ p.checkout {
         width: 100%;
     }
 
-    /* Seletor de quantidade no mobile */
     .quantidade {
         flex-grow: 1;
         justify-content: center;
@@ -291,7 +353,6 @@ p.checkout {
         margin-top: 0px;
     }
 
-    /* Botão excluir ao lado da quantidade */
     .excluir {
         margin-top: 0;
         font-size: 12px;
@@ -300,7 +361,6 @@ p.checkout {
         white-space: nowrap;
     }
 
-    /* Resumo do pedido ocupa toda a largura no mobile */
     .resumo {
         width: 100%;
         max-width: 100%;
@@ -309,7 +369,6 @@ p.checkout {
         overflow: hidden;
     }
 
-    /* Ajustando textos do resumo */
     .resumo h2 {
         font-size: 16px;
         margin: 10px;
@@ -319,7 +378,6 @@ p.checkout {
         font-size: 12px;
     }
 
-    /* Ajustando os botões no mobile */
     .finalizar,
     .continuar {
         font-size: 14px;
@@ -328,4 +386,20 @@ p.checkout {
         max-width: 100%;
     }
 
+    .compre-junto h2 {
+        font-size: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .produtos {
+        grid-template-columns: 1fr;
+    }
 }
