@@ -219,6 +219,43 @@
     .dashboard-minha-conta .title-border::after {
         display: none;
     }
+
+    .dados-cadastrais,
+    .compras {
+        width: 100%;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .compras {
+        width: 100%;
+    }
+
+    .compras .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .compras .cupom-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .compras .aplicar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .dados-cadastrais .flex-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .dados-cadastrais .input-group {
+        width: 100%;
+    }
 }
 
 @media (max-width: 600px) {

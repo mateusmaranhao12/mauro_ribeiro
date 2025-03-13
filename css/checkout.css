@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1800px;
+    margin: 30px auto;
+    flex: 1;
+    align-items: stretch;
+}
+
+.dados-cadastrais,
+.compras {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Layout da seção de compras */
+.compras {
+    flex: 1;
+    background: #e4e4e4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 40%;
+    /*ajustar conforme necessario*/
+}
+
+/* Itens do Carrinho */
+.compras .item {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    position: relative;
+    gap: 15px;
+    border-bottom: 1px solid #686868;
+}
+
+.compras .item-number {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    background: black;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.compras .item img {
+    width: 90px;
+    height: auto;
+}
+
+.compras .item-info h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.compras .item-info p {
+    font-size: 12px;
+    color: #686868;
+    text-align: start;
+    margin-top: 10px;
+}
+
+.compras .preco {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+/* Cupom de desconto */
+.compras .cupom-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.compras label {
+    font-size: 12px;
+}
+
+.compras .cupom-container input {
+    flex-grow: 1;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: #e4e4e4;
+    margin-bottom: 20px;
+}
+
+.compras .aplicar {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 150px;
+    height: 33px;
+}
+
+/* Resumo de valores */
+.compras .resumo {
+    margin-top: 15px;
+}
+
+.compras .linha {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.compras .total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.compras .total .preco-total {
+    font-size: 25px;
+}
+
+/* Captcha */
+.compras .captcha {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.compras .captcha img {
+    width: 100%;
+    max-width: 250px;
+    object-fit: cover;
+}
+
+/* Botão de Finalizar */
+.compras .finalizar {
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/*Dados cadastrais*/
+.dados-cadastrais {
+    width: 100%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+}
+
+.dados-cadastrais h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+    padding: 0px 0px 10px 0px;
+    margin-top: 30px;
+}
+
+/* Campos do formulário */
+.dados-cadastrais form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.dados-cadastrais label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dados-cadastrais input,
+.dados-cadastrais select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Grupo de opções (radio buttons) */
+.dados-cadastrais .radio-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.dados-cadastrais .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Inputs de telefone e data */
+.dados-cadastrais .flex-group {
+    display: flex;
+    gap: 10px;
+}
+
+.dados-cadastrais .input-group {
+    width: 50%;
+}
+
+.dados-cadastrais .input-group input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dados-cadastrais .input-group select {
+    margin-top: 10px;
+}
+
+/* Estilizando os radio buttons */
+.dados-cadastrais .radio-group input[type="radio"] {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+.dados-cadastrais .radio-group input[type="radio"]:checked {
+    background-color: black;
+    border-color: black;
+}
+
+.dados-cadastrais .radio-group input[type="radio"]:checked::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dados-cadastrais .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dados-cadastrais .checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    border: 2px solid black;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dados-cadastrais .checkbox-label input[type="checkbox"]:checked {
+    background-color: black;
+    border-color: black;
+}
+
+.dados-cadastrais .checkbox-label input[type="checkbox"]:checked::before {
+    content: "\2713";
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo da seção de entrega */
+.forma-entrega {
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilização das opções de rádio */
+.radio-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* Última opção sem a borda inferior */
+.radio-option:last-child {
+    border-bottom: none;
+}
+
+/* Ocultar o input de rádio padrão */
+.radio-option input {
+    display: none;
+}
+
+/* Personalizar o input de rádio */
+.radio-option input+span {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+/* Criando a aparência do botão de rádio */
+.radio-option input+span::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+}
+
+/* Quando estiver selecionado, preencher o botão de rádio */
+.radio-option input:checked+span::before {
+    background: black;
+    border: 2px solid rgb(207, 207, 207);
+}
+
+/* Preço do frete alinhado à direita */
+.preco-frete {
+    font-weight: bold;
+    font-size: 14px;
+}

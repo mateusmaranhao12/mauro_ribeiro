@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauro Ribeiro - Minha Conta</title>
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/logo.png">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./imgs/logo.png" alt="Mauro Ribeiro">
+            </div>
+
+            <!-- Links -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">MASCULINO</a></li>
+                    <li><a href="#">FEMININO</a></li>
+                    <li><a href="#">PERSONALIZE</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bars-staggered"></i> MENU</a></li>
+                </ul>
+            </nav>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-box">
+                <input type="text" placeholder="Buscar produto">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Ícones de Perfil e Carrinho -->
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+
+                <!-- Carrinho de compras com contador -->
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </div>
+            </div>
+
+            <!-- Ícone do Menu Hambúrguer (Somente Mobile) -->
+            <div class="menu-hamburguer" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content checkout">
+        <section class="dados-cadastrais">
+            <h2>DADOS CADASTRAIS</h2>
+
+            <form action="#">
+                <label for="nome">Nome completo*</label>
+                <input type="text" id="nome" placeholder="">
+
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" placeholder="">
+
+                <!-- Pessoa Física ou Jurídica -->
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="tipo" checked>
+                        <span>Pessoa física</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="tipo">
+                        <span>Pessoa jurídica</span>
+                    </label>
+                </div>
+
+                <label for="cpf">CPF*</label>
+                <input type="text" id="cpf" placeholder="">
+
+                <!-- Telefones -->
+                <div class="flex-group">
+                    <div class="input-group">
+                        <label for="telefone1">Telefone principal*</label>
+                        <input type="text" id="telefone1" placeholder="">
+                    </div>
+                    <div class="input-group">
+                        <label for="telefone2">Telefone secundário</label>
+                        <input type="text" id="telefone2" placeholder="">
+                    </div>
+                </div>
+
+                <!-- Nascimento e Sexo -->
+                <div class="flex-group">
+                    <div class="input-group">
+                        <label for="nascimento">Nascimento*</label>
+                        <input type="date" id="nascimento">
+                    </div>
+                    <div class="input-group">
+                        <label for="sexo">Sexo</label>
+                        <select id="sexo">
+                            <option value="" selected disabled></option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <h2>ENDEREÇO</h2>
+            <form action="#">
+                <!-- Nome do Endereço -->
+                <label for="nome-endereco">Nome do endereço (ex: minha casa)*</label>
+                <input type="text" id="nome-endereco" placeholder="">
+
+                <!-- CEP -->
+                <label for="cep">CEP*</label>
+                <input type="text" id="cep" placeholder="">
+
+                <!-- Rua e Número -->
+                <div class="flex-group">
+                    <div class="input-group">
+                        <label for="rua">Rua*</label>
+                        <input type="text" id="rua" placeholder="">
+                    </div>
+                    <div class="input-group">
+                        <label for="numero">Número*</label>
+                        <input type="text" id="numero" placeholder="">
+                    </div>
+                </div>
+
+                <!-- Checkbox "Endereço sem número" -->
+                <label class="checkbox-label">
+                    <input type="checkbox" id="sem-numero">
+                    <span>Endereço sem número</span>
+                </label>
+
+                <!-- Complemento e Bairro -->
+                <div class="flex-group">
+                    <div class="input-group">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" placeholder="">
+                    </div>
+                    <div class="input-group">
+                        <label for="bairro">Bairro*</label>
+                        <input type="text" id="bairro" placeholder="">
+                    </div>
+                </div>
+
+                <!-- Cidade -->
+                <label for="cidade">Cidade*</label>
+                <input type="text" id="cidade" placeholder="">
+
+                <!-- Ponto de referência -->
+                <label for="referencia">Ponto de referência</label>
+                <input type="text" id="referencia" placeholder="">
+            </form>
+
+            <h2>FORMA DE ENTREGA</h2>
+
+            <form action="#">
+                <label class="radio-option">
+                    <input type="radio" name="frete" checked>
+                    <span>Correios (10 dias úteis)</span>
+                    <p class="preco-frete">R$ 20,00</p>
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" name="frete">
+                    <span>SEDEX (5 dias úteis)</span>
+                    <p class="preco-frete">R$ 35,00</p>
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" name="frete">
+                    <span>Transportadora Nome (12 dias úteis)</span>
+                    <p class="preco-frete">R$ 12,00</p>
+                </label>
+            </form>
+
+            <h2>FORMA DE PAGAMENTO</h2>
+            <form action="#">
+                <label class="radio-option">
+                    <input type="radio" name="pagamento" checked>
+                    <span>Cartão de crédito</span>
+                </label>
+
+                <div class="cartao-credito">
+                    <div class="flex-group">
+                        <div class="input-group">
+                            <label>Número do cartão*</label>
+                            <input type="text" placeholder="">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Nome impresso no cartão do titular*</label>
+                            <input type="text" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="flex-group">
+                        <div class="input-group">
+                            <label>Validade*</label>
+                            <input type="text" placeholder="MM/AA">
+                        </div>
+
+                        <div class="input-group">
+                            <label>CVV*</label>
+                            <input type="text" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="flex-group">
+                        <div class="input-group">
+                            <label>CPF do titular*</label>
+                            <input type="text" placeholder="">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Em quantas parcelas deseja pagar*</label>
+                            <select>
+                                <option value="">Selecione</option>
+                                <option value="1x">1x</option>
+                                <option value="2x">2x</option>
+                                <option value="3x">3x</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Salvar cartão -->
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        <span>Salvar cartão para a próxima compra</span>
+                    </label>
+                </div>
+
+                <!-- Opções de pagamento -->
+                <label class="radio-option">
+                    <input type="radio" name="pagamento">
+                    <span>Boleto</span>
+                </label>
+
+                <label class="radio-option">
+                    <input type="radio" name="pagamento">
+                    <span>PIX <strong>10% de desconto</strong></span>
+                </label>
+            </form>
+        </section>
+
+        <!-- Resumo da Compra -->
+        <section class="compras">
+            <!-- Itens do Carrinho -->
+            <div class="item">
+                <span class="item-number">1</span>
+                <img src="./imgs/carrinho5-removebg-preview.png" alt="Camiseta Manga Curta Classic">
+                <div class="item-info">
+                    <h3>CAMISETA MANGA CURTA CLASSIC</h3>
+                    <p>Cor: Vermelho</p>
+                    <p>Tamanho: P</p>
+                </div>
+                <p class="preco">R$ 300,00</p>
+            </div>
+
+            <div class="item" style="margin-bottom: 20px;">
+                <span class="item-number">1</span>
+                <img src="./imgs/carrinho6-removebg-preview.png" alt="Meia Linha MR Neon">
+                <div class="item-info">
+                    <h3>MEIA LINHA MR NEON</h3>
+                    <p>Cor: Verde</p>
+                    <p>Tamanho: 41</p>
+                </div>
+                <p class="preco">R$ 40,00</p>
+            </div>
+
+            <!-- Cupom de desconto -->
+            <label for="cupom">Código do cupom de desconto</label>
+            <div class="cupom-container">
+                <input type="text" id="cupom" placeholder="">
+                <button class="aplicar">APLICAR</button>
+            </div>
+
+            <!-- Resumo de valores -->
+            <div class="resumo">
+                <div class="linha">
+                    <p>SUBTOTAL</p>
+                    <p>R$ 340,00</p>
+                </div>
+                <div class="linha">
+                    <p>FRETE</p>
+                    <p>R$ 20,00</p>
+                </div>
+                <div class="linha total">
+                    <p>TOTAL</p>
+                    <p class="preco-total">R$ 360,00</p>
+                </div>
+            </div>
+
+            <!-- CAPTCHA -->
+            <div class="captcha">
+                <img src="./imgs/captcha.webp" alt="Captcha">
+            </div>
+
+            <!-- Botão de Finalizar Compra -->
+            <button class="finalizar">FINALIZAR COMPRA</button>
+        </section>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer1">
+        <div class="footer-top">
+            <span>COMPARTILHANDO AVENTURAS:</span>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+            <div class="contact">
+                <i class="fa-regular fa-envelope"></i> faleconosco@mauroribeirosports.com.br
+            </div>
+        </div>
+
+        <div class="footer-bottom"></div>
+
+        <!-- seta do footer -->
+        <a href="#" class="arrow-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+    <footer class="footer2">
+        <div class="footer-container2">
+
+            <div class="footer-col2">
+                <h3><i class="fa-solid fa-location-dot"></i> CURITIBA / PR</h3>
+                <p>Rua Angelo Trevisan, 38<br>Cascatinha</p>
+                <p class="contatos"><i class="fas fa-phone"></i> (41) 3339-4684</p>
+                <p class="contatos"><i class="fab fa-whatsapp"></i> (41) 99522-8045</p>
+                <div class="payment-icons2">
+                    <img src="./imgs/faixa pagamento.png" alt="Formas de Pagamento">
+                </div>
+            </div>
+
+            <div class="footer-col2">
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">O atleta</a></li>
+                    <li><a href="#">Sala de imprensa</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>LOJISTAS</h3>
+                <ul>
+                    <li><a href="#">Quero ser um parceiro</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>SUPORTE / DÚVIDAS</h3>
+                <ul>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Dúvidas frequentes</a></li>
+                    <li><a href="#">Onde comprar</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Política de entregas</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 5: Outras informações -->
+            <div class="footer-col2">
+                <ul>
+                    <li><a href="#">Garantia MRS</a></li>
+                    <li><a href="#">Tabela de medidas feminina</a></li>
+                    <li><a href="#">Tabela de medidas masculina</a></li>
+                    <li><a href="#">Cuidados com os produtos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom2">
+            <p>© 2023 Mauro Ribeiro Sports - CNPJ 04.955.049/0001-59<br>Todos os Direitos Reservados</p>
+        </div>
+
+        <div class="footer-logo2">
+            <img src="./imgs/dosul.png">
+        </div>
+    </footer>
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>
