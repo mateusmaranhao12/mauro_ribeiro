@@ -1,0 +1,228 @@
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .carrinho-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .carrinho {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .produto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .produto .imagem {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .produto img {
+        width: 90px;
+        max-width: 100%;
+    }
+
+    .info {
+        width: 100%;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    .info h3 {
+        margin-top: 10px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .info p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .preco {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .actions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .quantidade {
+        flex-grow: 1;
+        justify-content: center;
+        padding: 5px 10px;
+        margin-top: 0px;
+    }
+
+    .excluir {
+        margin-top: 0;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .resumo {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    .resumo h2 {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .detalhe p {
+        font-size: 12px;
+    }
+
+    .finalizar,
+    .continuar {
+        font-size: 14px;
+        padding: 8px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .compre-junto h2 {
+        font-size: 100%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .scroll-top {
+        right: 10px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container2 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-col2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-col2 h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col2 p,
+    .footer-col2 ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Alinhamento da faixa de pagamento */
+    .payment-icons2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .payment-icons2 img {
+        margin: 0 auto;
+    }
+
+    /* Alinhamento da parte inferior */
+    .footer-bottom2 {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-logo2 {
+        text-align: center;
+    }
+
+    .dashboard-minha-conta .header-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .dashboard-minha-conta .btn-sair {
+        width: 50%;
+    }
+
+    .dashboard-minha-conta .main-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard-minha-conta .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dashboard-minha-conta .content {
+        text-align: center;
+    }
+
+    .dashboard-minha-conta .buttons {
+        flex-direction: column;
+    }
+
+    .dashboard-minha-conta .title-border {
+        display: block;
+        text-align: center;
+    }
+
+    .dashboard-minha-conta .title-border::after {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mauro Ribeiro - Carrinho</title>
+    <title>Mauro Ribeiro - Minha Conta</title>
     <link rel="shortcut icon" type="imagex/png" href="./imgs/logo.png">
 
     <!--Font Awesome-->
@@ -13,7 +13,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/minha-conta.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -22,6 +22,7 @@
 
     <body>
 
+        <!--Navbar-->
         <header>
             <div class="container">
                 <!-- Logo -->
@@ -63,111 +64,57 @@
             </div>
         </header>
 
-        <main class="carrinho-container">
-            <!-- Seção do Carrinho -->
-            <section class="carrinho">
-                <h2>Carrinho</h2>
-                <hr>
+        <!--Conteudo principal-->
+        <div class="main-content">
+            <div class="dashboard-minha-conta">
 
-                <div class="produto">
-                    <div class="imagem">
-                        <img src="./imgs/carrinho1-removebg-preview.png" alt="Camiseta Manga Curta Classic">
+                <!-- Cabeçalho -->
+                <div class="header-container">
+                    <p><strong>Olá <span class="user-name">Andrei Silvério</span>,</strong> seja bem-vindo!</p>
+                    <button class="btn-sair">Sair <i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <!-- Área principal (Sidebar + Conteúdo) -->
+                <div class="main-area">
+                    <!-- Menu lateral -->
+                    <div class="sidebar">
+                        <ul>
+                            <li class="active">INFORMAÇÕES GERAIS</li>
+                            <li>MEUS PEDIDOS</li>
+                            <li>INFORMAÇÕES DA CONTA</li>
+                            <li>ALTERAR SENHA</li>
+                            <li>MEUS ENDEREÇOS</li>
+                            <li>MEUS FAVORITOS</li>
+                        </ul>
                     </div>
-                    <div class="info">
-                        <h3>CAMISETA MANGA CURTA CLASSIC</h3>
-                        <p>Cor: Vermelho</p>
-                        <p>Tamanho: P</p>
-                        <div class="actions">
-                            <div class="quantidade">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
+
+                    <!-- Conteúdo principal -->
+                    <div class="content">
+                        <p>
+                            Em sua página inicial você pode visualizar as atividades recentes da sua conta.
+                            Clique sobre a informação desejada para ver mais detalhes.
+                        </p>
+
+                        <div class="title-border">
+                            <h3>ÚLTIMOS PEDIDOS</h3>
+                        </div>
+                        <p>Você ainda não possui pedidos</p>
+                        <button class="btn">VEJA NOSSOS PRODUTOS</button>
+
+                        <!-- Informações da Conta -->
+                        <div class="account-info">
+                            <h3>INFORMAÇÕES DA CONTA</h3>
+                            <p class="user-name">ANDREI SILVÉRIO</p>
+                            <p class="email">andreisilvério@gmail.com</p>
+                            <div class="buttons">
+                                <button class="btn">EDITAR INFORMAÇÕES</button>
+                                <button class="btn">ALTERAR SENHA</button>
                             </div>
-                            <a href="#" class="excluir"><i class="fa-solid fa-trash"></i> excluir do carrinho</a>
                         </div>
                     </div>
-                    <p class="preco">R$ 300,00</p>
-                </div>
-
-                <hr>
-
-                <div class="produto">
-                    <div class="imagem">
-                        <img src="./imgs/carrinho2-removebg-preview.png" alt="Camiseta Manga Curta Classic">
-                    </div>
-                    <div class="info">
-                        <h3>CAMISETA MANGA CURTA CLASSIC</h3>
-                        <p>Cor: Verde</p>
-                        <p>Tamanho: 41</p>
-                        <div class="actions">
-                            <div class="quantidade">
-                                <button>-</button>
-                                <span>1</span>
-                                <button>+</button>
-                            </div>
-                            <a href="#" class="excluir"><i class="fa-solid fa-trash"></i> excluir do carrinho</a>
-                        </div>
-                    </div>
-                    <p class="preco">R$ 40,00</p>
-                </div>
-            </section>
-
-            <!-- Resumo do Pedido -->
-            <aside class="resumo">
-                <h2>RESUMO</h2>
-                <div class="detalhe">
-                    <p>SUBTOTAL</p>
-                    <p>R$ 340,00</p>
-                </div>
-                <hr>
-                <div class="detalhe">
-                    <p>CUPOM DE DESCONTO</p>
-                    <p class="checkout">Será calculado no checkout</p>
-                </div>
-                <hr>
-                <div class="detalhe">
-                    <p>FRETE</p>
-                    <p class="checkout">Será calculado no checkout</p>
-                </div>
-                <div class="desconto">
-                    <p><strong>GANHE DESCONTO!</strong><br> Economize 10% pagando no PIX.</p>
-                </div>
-                <button class="finalizar">FINALIZAR COMPRA</button>
-                <button class="continuar">CONTINUAR COMPRANDO</button>
-            </aside>
-        </main>
-
-        <section class="compre-junto">
-            <h2>COMPRE JUNTO E COMPLETE SEU LOOK</h2>
-
-            <div class="produtos">
-                <!-- Produto 1 -->
-                <div class="produto-compre-junto">
-                    <span class="novo">NOVO</span>
-                    <img src="./imgs/carrinho3-removebg-preview.png" alt="Bermuda Carbon">
-                    <p class="nome-produto">BERMUDA CARBON</p>
-                </div>
-
-                <!-- Produto 2 -->
-                <div class="produto-compre-junto">
-                    <span class="novo">NOVO</span>
-                    <img src="./imgs/carrinho4-removebg-preview.png" alt="Calça Ergo Verão">
-                    <p class="nome-produto">CALÇA ERGO VERÃO</p>
-                </div>
-
-                <!-- Produto 3 -->
-                <div class="produto-compre-junto">
-                    <img src="./imgs/carrinho5-removebg-preview.png" alt="Luva Fiber">
-                    <p class="nome-produto">LUVA FIBER</p>
-                </div>
-
-                <!-- Produto 4 -->
-                <div class="produto-compre-junto">
-                    <img src="./imgs/carrinho6-removebg-preview.png" alt="Meia Identité">
-                    <p class="nome-produto">MEIA IDENTITÉ</p>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!--Footer-->
         <footer class="footer1">
