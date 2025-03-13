@@ -129,6 +129,33 @@
         right: 10px;
     }
 
+    .dicas-e-novidades-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dicas-e-novidades-card img {
+        margin: 0 auto;
+    }
+
+    .dicas-e-novidades-texto h3 {
+        font-size: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px !important;
+    }
+
+    .dicas-e-novidades-texto p {
+        margin: 0 auto;
+        margin-bottom: 10px !important;
+    }
+
+    .dicas-e-novidades-botao {
+        width: 100%;
+    }
+
+    .numeracao-paginas .pagina {
+        padding: 0px;
+    }
+
 }
 
 @media (max-width: 900px) {
