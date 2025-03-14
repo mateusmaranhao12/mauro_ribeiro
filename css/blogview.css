@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* Seção Gravel */
+.gravel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.gravel-container {
+    display: flex;
+    max-width: 1800px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.gravel-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.gravel-imagem img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.gravel-texto {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gravel-texto .data {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.gravel-texto h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.gravel-texto .destaque {
+    font-weight: bold;
+}
+
+.gravel-texto hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 2px solid black;
+    width: 100%;
+}
+
+.gravel-texto .creditos {
+    font-size: 14px;
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.gravel-texto .autor,
+.gravel-texto .fotografo {
+    font-weight: 800;
+    color: black;
+}
+
+/*nova colecao*/
+
+.nova-colecao {
+    margin-bottom: 50px;
+}
+
+.nova-colecao h2 {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.nova-colecao .destaque {
+    font-weight: bold;
+}
+
+/* Seção Potência Gravel */
+.potencia-gravel {
+    width: 90%;
+    margin: 50px auto;
+}
+
+/* Estrutura principal */
+.container-potencia {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.texto-potencia {
+    flex: 1;
+}
+
+.texto-potencia h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.texto-potencia p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.texto-potencia strong {
+    font-weight: 800;
+}
+
+.texto-potencia h3 {
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.imagem-potencia {
+    flex: 1;
+    text-align: right;
+}
+
+.imagem-potencia img,
+.imagem-potencia2 img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.imagem-potencia2 {
+    flex: 1;
+    text-align: center;
+}
+
+/*Texto extensao*/
+.texto-extensao {
+    text-align: center;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.texto-extensao h2 {
+    width: 80%;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px auto;
+}
+
+.texto-extensao h2 strong {
+    font-weight: 900;
+}
+
+.texto-extensao p {
+    width: 90%;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/*imagem bicicleta*/
+.imagem-bicicleta {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.imagem-bicicleta img {
+    max-width: 100%;
+    height: auto; 
+    object-fit: contain;
+}
+
+/* Estiliza a seção do banner */
+.espaco-banner {
+    background: url('../imgs/blogview5.png') no-repeat center center;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/*overlay escuro sobre a imagem */
+.espaco-banner .espaco-banner-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estiliza o título dentro do banner */
+.espaco-banner .espaco-banner-titulo {
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.espaco-banner .espaco-banner-titulo strong {
+    font-weight: 800;
+}
+
+/* Botão dentro do banner */
+.espaco-banner .espaco-banner-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Ícone de seta dentro do botão */
+.espaco-banner .espaco-banner-btn span {
+    font-size: 16px;
+}
+
+/* Efeito hover no botão */
+.espaco-banner .espaco-banner-btn:hover {
+    background: white;
+    color: black;
+}

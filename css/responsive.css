@@ -156,6 +156,57 @@
         padding: 0px;
     }
 
+    .gravel-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gravel-imagem {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gravel-texto {
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+
+    .gravel-texto hr {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    .gravel-texto h2 {
+        font-size: 100%;
+    }
+
+    .nova-colecao h2 {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .container-potencia {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem-potencia {
+        text-align: center;
+    }
+
+    .imagem-potencia img, .imagem-potencia2 img {
+        max-width: 100%;
+    }
+
+    .imagem-bicicleta img {
+        width: 90%;
+    }
+
+    .espaco-banner {
+        height: 200px;
+    }
+
 }
 
 @media (max-width: 900px) {
