@@ -264,6 +264,48 @@
         font-size: 20px;
     }
 
+    .garantia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .garantia-grid ul {
+        width: 100%;
+    }
+
+    .garantia-grid li {
+        text-align: center;
+    }
+
+    .garantia-valida {
+        padding: 0;
+    }
+
+    .garantia-produtos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .garantia-importante {
+        text-align: center;
+    }
+
+    .garantia-nao-valida .garantia-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .garantia-etapas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .documentos-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .documento {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -396,6 +438,24 @@
 @media (max-width: 600px) {
     .produtos {
         grid-template-columns: 1fr;
+    }
+
+    .prazo-devolucao {
+        padding: 30px 15px;
+    }
+
+    .prazo-devolucao h2 {
+        font-size: 24px;
+    }
+
+    .prazo-devolucao .descricao,
+    .prazo-devolucao .destaque {
+        font-size: 12px;
+    }
+
+    .botao-contato {
+        padding: 10px 20px;
+        font-size: 12px;
     }
 }
 

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauro Ribeiro - Cuidados</title>
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/logo.png">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/garantia.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./imgs/logo.png" alt="Mauro Ribeiro">
+            </div>
+
+            <!-- Links -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">MASCULINO</a></li>
+                    <li><a href="#">FEMININO</a></li>
+                    <li><a href="#">PERSONALIZE</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bars-staggered"></i> MENU</a></li>
+                </ul>
+            </nav>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-box">
+                <input type="text" placeholder="Buscar produto">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Ícones de Perfil e Carrinho -->
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+
+                <!-- Carrinho de compras com contador -->
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </div>
+            </div>
+
+            <!-- Ícone do Menu Hambúrguer (Somente Mobile) -->
+            <div class="menu-hamburguer" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="texto-garantia">
+            <h2>GARANTIA</h2>
+            <p>A Mauro Ribeiro Sports oferece 90 dias de garantia legal para produtos duráveis, contando a partir da
+                data da compra.</p>
+        </div>
+
+        <section class="garantia-valida">
+            <h2><span>01.</span> QUANDO A GARANTIA É VÁLIDA</h2>
+            <p class="subtitulo">
+                A GARANTIA É VÁLIDA SE O PRODUTO APRESENTAR ALGUM DOS SEGUINTES DEFEITOS DE FABRICAÇÃO:
+            </p>
+
+            <div class="garantia-grid">
+                <ul>
+                    <li>Costura aberta</li>
+                    <li>Forro descosturado ou irregular</li>
+                    <li>Manchas em peças que nunca foram usadas</li>
+                    <li>Tecido com falhas na trama (a ser avaliado)</li>
+                </ul>
+                <ul>
+                    <li>Refletivos soltos ou danificados (a ser analisado)</li>
+                    <li>Problema no cursor do zíper (fecho ou deslize)</li>
+                    <li>Desgaste precoce do tecido (transparente ou danificado)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="garantia-produtos">
+            <h2><strong>02.</strong> GARANTIA EM PRODUTOS PERSONALIZADOS.</h2>
+            <p class="subtitulo">
+                PARA PRODUTOS PERSONALIZADOS, A GARANTIA SERÁ VÁLIDA TAMBÉM NOS SEGUINTES CASOS:
+            </p>
+
+            <div class="garantia-produtos-grid">
+                <div class="garantia-texto">
+                    <p>
+                        Erros de ortografia, cores ou logomarcas que não foram previamente aprovados.
+                        (As cores podem ter uma variação de até 5% em relação ao que é mostrado no ambiente virtual).
+                    </p>
+
+                    <p>
+                        Tamanhos fora da nossa tabela de medidas. (Pode haver uma variação de até 5% para mais ou para
+                        menos).
+                    </p>
+                </div>
+
+                <div class="garantia-importante">
+                    <p><strong>Importante:</strong> A responsabilidade de garantir que os tamanhos solicitados estão
+                        corretos é do cliente.
+                        Por isso, antes de realizar a compra, recomendamos que verifique atentamente a nossa tabela de
+                        medidas e siga as
+                        instruções de como medir corretamente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="garantia-nao-valida">
+            <h2><strong>03.</strong> QUANDO A GARANTIA <strong>NÃO</strong> É VÁLIDA</h2>
+            <p class="subtitulo">
+                A GARANTIA SERÁ AUTOMATICAMENTE INVALIDADA NOS SEGUINTES CASOS:
+            </p>
+
+            <div class="garantia-grid">
+                <ul>
+                    <li>Manchas ou desgastes causados pelo uso.</li>
+                    <li>Desgastes causados por objetos de atrito constante.</li>
+                    <li>Lavagem inadequada, diferente das instruções na etiqueta.</li>
+                </ul>
+                <ul>
+                    <li>Danos causados por mau uso (como rasgos de objetos cortantes ou abrasivos, ou quedas da
+                        bicicleta).</li>
+                    <li>Produtos que foram reparados ou alterados por pessoas não autorizadas pela Mauro Ribeiro Sports.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="solicitar-garantia">
+            <h2>COMO <strong>SOLICITAR</strong> A GARANTIA</h2>
+
+            <div class="garantia-etapas">
+                <div class="etapa">
+                    <img src="./imgs/garantia1.png" alt="Ícone produto defeito">
+                    <p>Se o produto apresentar defeito, ele deve ser enviado para o nosso departamento técnico através
+                        de um revendedor autorizado.</p>
+                </div>
+                <div class="etapa">
+                    <img src="./imgs/garantia2.png" alt="Ícone contato">
+                    <p>Antes de enviar, entre em contato com o revendedor ou com nosso departamento para confirmar se o
+                        defeito é coberto pela garantia e evitar o envio de peças que não possam ser consertadas.</p>
+                </div>
+                <div class="etapa">
+                    <img src="./imgs/garantia3.png" alt="Ícone produto lavado">
+                    <p>O produto deve estar lavado conforme as instruções da etiqueta. Caso contrário, ele será
+                        devolvido sem reparo.</p>
+                </div>
+            </div>
+
+            <div class="documentos-necessarios">
+                <h3><strong>DOCUMENTOS</strong> NECESSÁRIOS</h3>
+                <p class="subtitulo">
+                    PARA INICIAR O PROCESSO DE GARANTIA, VOCÊ PRECISA ENVIAR OS SEGUINTES DOCUMENTOS JUNTO AO PRODUTO:
+                </p>
+
+                <div class="documentos-grid">
+                    <div class="documento">
+                        <img src="./imgs/garantia4.png" alt="Nota Fiscal">
+                        <p>NOTA FISCAL DE COMPRA</p>
+                    </div>
+                    <div class="documento">
+                        <img src="./imgs/garantia5.png" alt="Formulário de Garantia">
+                        <p>FORMULÁRIO DE GARANTIA PREENCHIDO</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prazo-devolucao">
+            <h2><strong>PRAZO</strong> PARA DEVOLUÇÃO</h2>
+            <p class="descricao">
+                A devolução do produto, caso o defeito seja confirmado, será realizada no prazo de até
+                <strong>30 dias corridos</strong> após a abertura do processo de garantia. A falta de qualquer um
+                dos documentos pode atrasar o processo.
+            </p>
+
+            <p class="destaque">
+                FIQUE TRANQUILO, NOSSA EQUIPE ESTÁ À DISPOSIÇÃO PARA GARANTIR A MELHOR EXPERIÊNCIA DE COMPRA.
+                SE PRECISAR DE MAIS INFORMAÇÕES, NÃO HESITE EM NOS CONTATAR!
+            </p>
+
+            <button class="botao-contato">ENTRAR EM CONTATO</button>
+        </section>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="footer1">
+        <div class="footer-top">
+            <span>COMPARTILHANDO AVENTURAS:</span>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+            <div class="contact">
+                <i class="fa-regular fa-envelope"></i> faleconosco@mauroribeirosports.com.br
+            </div>
+        </div>
+
+        <div class="footer-bottom"></div>
+
+        <!-- seta do footer -->
+        <a href="#" class="arrow-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+    <footer class="footer2">
+        <div class="footer-container2">
+
+            <div class="footer-col2">
+                <h3><i class="fa-solid fa-location-dot"></i> CURITIBA / PR</h3>
+                <p>Rua Angelo Trevisan, 38<br>Cascatinha</p>
+                <p class="contatos"><i class="fas fa-phone"></i> (41) 3339-4684</p>
+                <p class="contatos"><i class="fab fa-whatsapp"></i> (41) 99522-8045</p>
+                <div class="payment-icons2">
+                    <img src="./imgs/faixa pagamento.png" alt="Formas de Pagamento">
+                </div>
+            </div>
+
+            <div class="footer-col2">
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">O atleta</a></li>
+                    <li><a href="#">Sala de imprensa</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>LOJISTAS</h3>
+                <ul>
+                    <li><a href="#">Quero ser um parceiro</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>SUPORTE / DÚVIDAS</h3>
+                <ul>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Dúvidas frequentes</a></li>
+                    <li><a href="#">Onde comprar</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Política de entregas</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 5: Outras informações -->
+            <div class="footer-col2">
+                <ul>
+                    <li><a href="#">Garantia MRS</a></li>
+                    <li><a href="#">Tabela de medidas feminina</a></li>
+                    <li><a href="#">Tabela de medidas masculina</a></li>
+                    <li><a href="#">Cuidados com os produtos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom2">
+            <p>© 2023 Mauro Ribeiro Sports - CNPJ 04.955.049/0001-59<br>Todos os Direitos Reservados</p>
+        </div>
+
+        <div class="footer-logo2">
+            <img src="./imgs/dosul.png">
+        </div>
+    </footer>
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>

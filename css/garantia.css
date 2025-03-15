@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 30px auto 0px auto;
+    flex: 1;
+    align-items: stretch;
+}
+
+/*texto garantia*/
+.texto-garantia {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.texto-garantia h2 {
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.texto-garantia p {
+    font-size: 12px;
+    font-weight: 800;
+    color: #242424;
+    text-transform: uppercase;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+/*garantia valida*/
+.garantia-valida {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.garantia-valida h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.garantia-valida h2 span {
+    font-weight: 800;
+}
+
+.garantia-valida .subtitulo {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.garantia-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1100px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.garantia-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.garantia-grid li {
+    font-size: 14px;
+    color: #444;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.garantia-produtos {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.garantia-produtos h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.garantia-produtos h2 strong {
+    font-weight: 800;
+}
+
+.garantia-produtos .subtitulo {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.garantia-produtos-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    text-align: left;
+}
+
+.garantia-texto p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 8px;
+}
+
+.garantia-importante {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+}
+
+/*Garantia nao valida*/
+.garantia-nao-valida {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.garantia-nao-valida h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.garantia-nao-valida h2 strong {
+    font-weight: 800;
+}
+
+.garantia-nao-valida .subtitulo {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.garantia-nao-valida .garantia-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+}
+
+.garantia-nao-valida ul {
+    list-style: none;
+    padding: 0;
+}
+
+.garantia-nao-valida ul li {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+/*Solicitar garantia*/
+.solicitar-garantia {
+    text-align: center;
+    background: #ebebeb;
+    padding: 40px 20px;
+}
+
+/* Título */
+.solicitar-garantia h2 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.solicitar-garantia h2 strong {
+    font-weight: 800;
+}
+
+/* Grid das etapas */
+.garantia-etapas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cada etapa */
+.etapa {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.etapa img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.etapa p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Documentos necessários */
+.documentos-necessarios {
+    margin-top: 40px;
+}
+
+/* Título dos documentos */
+.documentos-necessarios h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.documentos-necessarios h3 strong {
+    font-weight: 800;
+}
+
+/* Subtítulo */
+.documentos-necessarios .subtitulo {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+/* Grid dos documentos */
+.documentos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Cada documento */
+.documento {
+    padding: 15px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+}
+
+.documento img {
+    width: 40px;
+    height: auto;
+}
+
+.documento p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/*Prazo para devolucao*/
+.prazo-devolucao {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.prazo-devolucao h2 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.prazo-devolucao h2 strong {
+    font-weight: 800;
+}
+
+.prazo-devolucao .descricao {
+    font-size: 14px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+}
+
+.prazo-devolucao .destaque {
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    max-width: 650px;
+    margin: 15px auto;
+    color: #141414;
+    letter-spacing: 1px;
+}
+
+.botao-contato {
+    background: black;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.botao-contato:hover {
+    background: #333;
+}
