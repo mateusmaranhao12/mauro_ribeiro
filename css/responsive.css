@@ -314,6 +314,58 @@
         max-width: 100%;
     }
 
+    .nossas-tecnologias h2,
+    .nossas-tecnologias p {
+        font-size: 100%;
+    }
+
+    .unica-marca {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .unica-marca-conteudo,
+    .unica-marca-texto {
+        max-width: 100%;
+    }
+
+    .unica-marca h2 {
+        font-size: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .unica-marca-texto p {
+        font-size: 13px;
+    }
+
+    .forro-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .forro-imagem {
+        max-width: 30% !important;
+    }
+
+    .forro-item img {
+        max-width: 100%;
+    }
+
+    .forro-info {
+        max-width: 100%;
+    }
+
+    .forro-icones {
+        justify-content: center;
+    }
+
+    .conforto {
+        font-size: 100%;
+    }
+
 }
 
 @media (max-width: 900px) {
