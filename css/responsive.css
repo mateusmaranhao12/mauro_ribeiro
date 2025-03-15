@@ -195,7 +195,8 @@
         text-align: center;
     }
 
-    .imagem-potencia img, .imagem-potencia2 img {
+    .imagem-potencia img,
+    .imagem-potencia2 img {
         max-width: 100%;
     }
 
@@ -205,6 +206,62 @@
 
     .espaco-banner {
         height: 200px;
+    }
+
+    .instrucoes {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .instrucoes-overlay {
+        background: none;
+    }
+
+    .instrucoes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cuidados-lavagem h2 {
+        font-size: 20px;
+    }
+
+    .cuidados-lista .item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cuidados-lista .item h3 {
+        min-width: unset;
+        margin-bottom: 5px;
+    }
+
+    .cuidados-lista .item p {
+        margin-left: 0;
+    }
+
+    .cuide-bem {
+        height: auto;
+        padding: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cuide-bem-overlay {
+        max-width: 90%;
+    }
+
+    .cuide-bem .pequeno-texto {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .cuide-bem h2 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .cuide-bem h2 strong {
+        font-size: 20px;
     }
 
 }
@@ -338,6 +395,12 @@
 
 @media (max-width: 600px) {
     .produtos {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .instrucoes-grid {
         grid-template-columns: 1fr;
     }
 }
