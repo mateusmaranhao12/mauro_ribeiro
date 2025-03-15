@@ -41,9 +41,9 @@ function toggleFiltro() {
 }
 
 // Fechar o menu ao clicar no overlay
-document.getElementById("overlay").addEventListener("click", function () {
-    toggleFiltro();
-});
+document.getElementById('overlay').addEventListener('click', function () {
+    toggleFiltro()
+})
 
 // Verifica se os botões precisam ser exibidos
 function verificarFiltrosAbertos() {
@@ -99,3 +99,22 @@ function toggleCores() {
 
 // Evento para abrir/fechar ao clicar no título 'COR'
 document.querySelector('.titulo-cor').addEventListener('click', toggleCores)
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Seleção múltipla para tamanhos
+    document.querySelectorAll('.filtro-opcoes .opcao').forEach(opcao => {
+        opcao.addEventListener('click', function () {
+            this.classList.toggle('selecionado') // Alternar classe de seleção
+        })
+    })
+
+    // Seleção múltipla para cores
+    document.querySelectorAll('.filtro-opcoes.cores .cor').forEach(cor => {
+        cor.addEventListener('click', function () {
+            this.classList.toggle('ativa') // Alternar a seleção
+        })
+    })
+
+    // Evento para abrir/fechar ao clicar no título 'COR'
+    document.querySelector('.titulo-cor').addEventListener('click', toggleCores)
+})
