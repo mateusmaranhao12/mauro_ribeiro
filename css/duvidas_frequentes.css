@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 30px auto 0px auto;
+    flex: 1;
+    align-items: stretch;
+}
+
+/*texto duvidas frequentes*/
+
+.texto-duvidas-frequentes {
+    font-size: 24px;
+    text-align: center;
+}
+
+.texto-duvidas-frequentes h1 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.texto-duvidas-frequentes span {
+    font-weight: 800;
+}
+
+/*Duvidas*/
+.duvidas {
+    max-width: 1400px;
+    margin: 0 auto 10px auto;
+    padding: 20px;
+    background-color: #eeeeee;
+}
+
+.duvidas h2 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #666;
+}
+
+.duvidas h2 i {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Cada pergunta */
+.duvida {
+    border-bottom: 1px solid #666;
+    padding: 20px;
+}
+
+.duvida li {
+    color: #666;
+    font-size: 13px;
+    margin-left: 30px;
+}
+
+.duvida-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+}
+
+.duvida-btn i {
+    font-size: 14px;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+.resposta {
+    display: none;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.resposta.ativa {
+    display: block;
+}
+
+.duvida.ativa .duvida-btn i {
+    transform: rotate(180deg);
+}
+
+/*outras duvidas*/
+.outras-duvidas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eeeeee;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 1380px;
+    margin: 0 auto 10px auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.outras-duvidas i {
+    font-size: 14px;
+    color: #666;
+}
+
+/*horario de atendimento*/
+.horarios-atendimento {
+    background: #eeeeee;
+    font-size: 14px;
+    padding: 15px 20px;
+    width: 1380px;
+    margin: 0 auto 10px auto;
+}
+
+.horarios-atendimento h2 {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background: #222;
+    margin-bottom: 10px;
+}
+
+.linha-p {
+    width: 100%;
+    height: 1px;
+    background: #969696;
+    margin-top: 20px;
+}
+
+.atendimento-item {
+    padding: 20px 0;
+}
+
+.pergunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.pergunta i {
+    font-size: 14px;
+    color: #666;
+}
+
+.atendimento-item p {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    padding-left: 20px;
+}

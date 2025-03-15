@@ -306,6 +306,14 @@
         width: 100%;
     }
 
+    .outras-duvidas {
+        max-width: 100%;
+    }
+
+    .horarios-atendimento {
+        max-width: 100%;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -433,6 +441,25 @@
     .dados-cadastrais .input-group {
         width: 100%;
     }
+
+    .texto-duvidas-frequentes {
+        font-size: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .duvida li {
+        font-size: 13px;
+        margin-left: 0 auto;
+    }
+
+    .outras-duvidas {
+        max-width: 100%;
+    }
+
+    .horarios-atendimento {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -462,5 +489,15 @@
 @media (max-width: 480px) {
     .instrucoes-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 1366px) {
+    .outras-duvidas {
+        max-width: 100%;
+    }
+
+    .horarios-atendimento {
+        max-width: 100%;
     }
 }
