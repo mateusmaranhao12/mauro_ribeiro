@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauro Ribeiro - Lista</title>
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/logo.png">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/lista.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./imgs/logo.png" alt="Mauro Ribeiro">
+            </div>
+
+            <!-- Links -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">MASCULINO</a></li>
+                    <li><a href="#">FEMININO</a></li>
+                    <li><a href="#">PERSONALIZE</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bars-staggered"></i> MENU</a></li>
+                </ul>
+            </nav>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-box">
+                <input type="text" placeholder="Buscar produto">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Ícones de Perfil e Carrinho -->
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+
+                <!-- Carrinho de compras com contador -->
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </div>
+            </div>
+
+            <!-- Ícone do Menu Hambúrguer (Somente Mobile) -->
+            <div class="menu-hamburguer" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="topo-listagem">
+            <div class="breadcrumb-container">
+                <nav class="breadcrumb">
+                    <a href="#">Home</a> /
+                    <a href="#">Masculino</a> /
+                    <strong>Bermudas</strong>
+                </nav>
+                <span class="quantidade-produtos">15 produtos</span>
+            </div>
+
+            <div class="acoes-listagem">
+                <button class="botao-filtrar" onclick="toggleFiltro()">
+                    <i class="fas fa-filter"></i> FILTRAR
+                </button>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">Classificar por <i
+                            class="fa-solid fa-chevron-down"></i></button>
+                    <ul class="dropdown-menu" id="dropdownMenu">
+                        <li>Mais vendidos</li>
+                        <li>Lançamentos</li>
+                        <li>Menor preço</li>
+                        <li>Maior preço</li>
+                        <li>Nome A - Z</li>
+                        <li>Nome Z - A</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay para quando o menu tiver aberto -->
+        <div class="overlay" id="overlay"></div>
+
+        <!-- Menu de Filtros -->
+        <div class="menu-filtros" id="menuFiltros">
+            <div class="filtros-header">
+                <strong>FILTRAR POR PRODUTOS</strong>
+                <button class="fechar-filtro" onclick="toggleFiltro()">
+                    <i class="fa-solid fa-plus" id="iconeFiltro"></i>
+                </button>
+            </div>
+
+            <div class="filtros-conteudo">
+                <div class="filtro">
+                    <h3 onclick="toggleCategoria(this)"><span>COLEÇÃO</span> <i class="fa-solid fa-plus"></i></h3>
+                    <div class="filtro-opcoes">
+                        <span class="opcao">Comfort</span>
+                        <span class="opcao">Performance</span>
+                        <span class="opcao">Gravel</span>
+                    </div>
+                </div>
+
+                <div class="filtro">
+                    <h3 onclick="toggleCategoria(this)"><span>TAMANHO</span> <i class="fa-solid fa-plus"></i></h3>
+                    <div class="filtro-opcoes">
+                        <span class="opcao">PP</span>
+                        <span class="opcao">P</span>
+                        <span class="opcao">M</span>
+                        <span class="opcao">G</span>
+                        <span class="opcao">GG</span>
+                        <span class="opcao">G1</span>
+                    </div>
+                </div>
+
+                <div class="filtro">
+                    <h3 class="titulo-cor">COR <i class="fa-solid fa-plus"></i></h3>
+                    <div class="filtro-opcoes cores">
+                        <span class="cor preta"></span> <small>Preto</small>
+                        <span class="cor branca"></span> <small>Branco</small>
+                        <span class="cor azul"></span> <small>Azul</small>
+                        <span class="cor amarela"></span> <small>Amarelo</small>
+                        <span class="cor vermelha"></span> <small>Vermelho</small>
+                        <span class="cor verde"></span> <small>Verde</small>
+                        <span class="cor rosa"></span> <small>Rosa</small>
+                        <span class="cor laranja"></span> <small>Laranja</small>
+                        <span class="cor roxo"></span> <small>Roxo</small>
+                        <span class="cor marrom"></span> <small>Marrom</small>
+                        <span class="cor multicor"></span> <small>Multicor</small>
+                    </div>
+                </div>
+
+                <div class="filtro">
+                    <h3 onclick="toggleCategoria(this)"><span>GÊNERO</span> <i class="fa-solid fa-plus"></i></h3>
+                    <div class="filtro-opcoes">
+                        <span class="opcao">Masculino</span>
+                        <span class="opcao">Unissex</span>
+                    </div>
+                </div>
+
+                <div class="filtro">
+                    <h3 onclick="toggleCategoria(this)"><span>INTENSIDADE DO TREINO</span> <i
+                            class="fa-solid fa-plus"></i></h3>
+                    <div class="filtro-opcoes">
+                        <span class="opcao">Intenso</span>
+                        <span class="opcao">Cotidiano</span>
+                    </div>
+                </div>
+
+                <div class="botoes-filtros">
+                    <button class="botao-limpar">LIMPAR <i class="fa-solid fa-trash"></i></button>
+                    <button class="botao-aplicar">APLICAR <i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <section class="bermudas">
+            <div class="bermuda-item">
+                <span class="etiqueta-novo">NOVO</span>
+                <img src="./imgs/lista1-removebg-preview.png" alt="Bermuda Versatile">
+                <p class="bermuda-nome">BERMUDA VERSATILE</p>
+            </div>
+
+            <div class="bermuda-item">
+                <span class="etiqueta-novo">NOVO</span>
+                <img src="./imgs/lista2-removebg-preview.png" alt="Bermuda Pocket">
+                <p class="bermuda-nome">BERMUDA POCKET</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista3-removebg-preview.png" alt="Bermuda Light Tour">
+                <p class="bermuda-nome">BERMUDA LIGHT TOUR</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista4-removebg-preview.png" alt="Bermuda System Damping">
+                <p class="bermuda-nome">BERMUDA SYSTEM DAMPING</p>
+            </div>
+            <div class="bermuda-item">
+                <img src="./imgs/lista1-removebg-preview.png" alt="Bermuda Versatile">
+                <p class="bermuda-nome">BERMUDA VERSATILE</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista2-removebg-preview.png" alt="Bermuda Pocket">
+                <p class="bermuda-nome">BERMUDA POCKET</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista3-removebg-preview.png" alt="Bermuda Light Tour">
+                <p class="bermuda-nome">BERMUDA LIGHT TOUR</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista4-removebg-preview.png" alt="Bermuda System Damping">
+                <p class="bermuda-nome">BERMUDA SYSTEM DAMPING</p>
+            </div>
+            <div class="bermuda-item">
+                <img src="./imgs/lista1-removebg-preview.png" alt="Bermuda Versatile">
+                <p class="bermuda-nome">BERMUDA VERSATILE</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista2-removebg-preview.png" alt="Bermuda Pocket">
+                <p class="bermuda-nome">BERMUDA POCKET</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista3-removebg-preview.png" alt="Bermuda Light Tour">
+                <p class="bermuda-nome">BERMUDA LIGHT TOUR</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista4-removebg-preview.png" alt="Bermuda System Damping">
+                <p class="bermuda-nome">BERMUDA SYSTEM DAMPING</p>
+            </div>
+            <div class="bermuda-item">
+                <img src="./imgs/lista1-removebg-preview.png" alt="Bermuda Versatile">
+                <p class="bermuda-nome">BERMUDA VERSATILE</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista2-removebg-preview.png" alt="Bermuda Pocket">
+                <p class="bermuda-nome">BERMUDA POCKET</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista3-removebg-preview.png" alt="Bermuda Light Tour">
+                <p class="bermuda-nome">BERMUDA LIGHT TOUR</p>
+            </div>
+
+            <div class="bermuda-item">
+                <img src="./imgs/lista4-removebg-preview.png" alt="Bermuda System Damping">
+                <p class="bermuda-nome">BERMUDA SYSTEM DAMPING</p>
+            </div>
+        </section>
+
+        <div class="bermudas-para-ciclismo">
+            <h1><strong>BERMUDAS PARA CICLISMO:</strong> CONFORTO E PERFORMANCE</h1>
+
+            <p class="subtitulo">
+                A IMPORTÂNCIA DO VESTUÁRIO ADEQUADO NO CICLISMO - O CICLISMO É UM ESPORTE
+                QUE EXIGE EQUIPAMENTOS ESPECÍFICOS PARA GARANTIR MÁXIMO CONFORTO E DESEMPENHO.
+            </p>
+
+            <p class="descricao">
+                Entre esses equipamentos, as bermudas para ciclistas ocupam um lugar de destaque. Projetadas
+                especialmente
+                para atender às necessidades dos ciclistas, essas peças são fundamentais para uma experiência de
+                pedalada
+                agradável e sem desconfortos. <strong>Almofada (badana) especial:</strong> Desenvolvida para absorver
+                impactos
+                e reduzir o atrito entre o corpo do ciclista e o selim. <strong>Material técnico:</strong> Geralmente
+                confeccionadas
+                com tecidos que oferecem elasticidade, compressão muscular e rápida secagem. <strong>Costura
+                    anatômica:</strong>
+                Modelagem que acompanha os movimentos do corpo durante a pedalada.
+            </p>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="footer1">
+        <div class="footer-top">
+            <span>COMPARTILHANDO AVENTURAS:</span>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+            <div class="contact">
+                <i class="fa-regular fa-envelope"></i> faleconosco@mauroribeirosports.com.br
+            </div>
+        </div>
+
+        <div class="footer-bottom"></div>
+
+        <!-- seta do footer -->
+        <a href="#" class="arrow-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+    <footer class="footer2">
+        <div class="footer-container2">
+
+            <div class="footer-col2">
+                <h3><i class="fa-solid fa-location-dot"></i> CURITIBA / PR</h3>
+                <p>Rua Angelo Trevisan, 38<br>Cascatinha</p>
+                <p class="contatos"><i class="fas fa-phone"></i> (41) 3339-4684</p>
+                <p class="contatos"><i class="fab fa-whatsapp"></i> (41) 99522-8045</p>
+                <div class="payment-icons2">
+                    <img src="./imgs/faixa pagamento.png" alt="Formas de Pagamento">
+                </div>
+            </div>
+
+            <div class="footer-col2">
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">O atleta</a></li>
+                    <li><a href="#">Sala de imprensa</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>LOJISTAS</h3>
+                <ul>
+                    <li><a href="#">Quero ser um parceiro</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>SUPORTE / DÚVIDAS</h3>
+                <ul>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Dúvidas frequentes</a></li>
+                    <li><a href="#">Onde comprar</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Política de entregas</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 5: Outras informações -->
+            <div class="footer-col2">
+                <ul>
+                    <li><a href="#">Garantia MRS</a></li>
+                    <li><a href="#">Tabela de medidas feminina</a></li>
+                    <li><a href="#">Tabela de medidas masculina</a></li>
+                    <li><a href="#">Cuidados com os produtos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom2">
+            <p>© 2023 Mauro Ribeiro Sports - CNPJ 04.955.049/0001-59<br>Todos os Direitos Reservados</p>
+        </div>
+
+        <div class="footer-logo2">
+            <img src="./imgs/dosul.png">
+        </div>
+    </footer>
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>

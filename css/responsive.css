@@ -366,6 +366,23 @@
         font-size: 100%;
     }
 
+    .acoes-listagem {
+        margin: 20px 0px 20px 0px;
+    }
+
+    .bermudas-para-ciclismo h1 {
+        font-size: 26px;
+    }
+
+    .bermudas-para-ciclismo .subtitulo {
+        font-size: 12px;
+    }
+
+    .bermudas-para-ciclismo .descricao {
+        font-size: 13px;
+        text-align: left;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -536,6 +553,10 @@
         padding: 10px 20px;
         font-size: 12px;
     }
+
+    .bermudas {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
@@ -551,5 +572,9 @@
 
     .horarios-atendimento {
         max-width: 100%;
+    }
+
+    .bermudas {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
