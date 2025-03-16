@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.tabela-medidas {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+.container-medidas {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-medidas h2 {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.container-medidas h2 strong {
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.descricao {
+    font-size: 14px;
+    color: #666;
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.5;
+}
+
+.descricao strong {
+    font-weight: bold;
+}
+
+.tabela-medidas2 {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgb(204, 204, 204);
+}
+
+.tabela-medidas2 .tabela-medidas-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Estilização da Tabela */
+.tabela-medidas2 .tabela-medidas-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabela-medidas2 .tabela-medidas-tabela th,
+.tabela-medidas2 .tabela-medidas-tabela td {
+    padding: 10px;
+    border-bottom: 1px solid #7c7c7c;
+    font-weight: 500;
+}
+
+.tabela-medidas2 .tabela-medidas-tabela td {
+    color: #353535;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.tabela-medidas2 .tabela-medidas-tabela th {
+    font-weight: bold;
+}
+
+/* Texto e Destaques */
+.tabela-medidas2 .tabela-medidas-descricao {
+    font-size: 14px;
+    color: #666;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.tabela-medidas2 .tabela-medidas-destaque {
+    color: red;
+    font-weight: bold;
+}
+
+/* Imagem ao Lado */
+.tabela-medidas2 .tabela-medidas-imagem {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tabela-medidas2 .tabela-medidas-imagem img {
+    width: 100%;
+    max-width: 250px;
+}
+
+/*como medir*/
+.como-medir {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.como-medir-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Título */
+.como-medir h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.como-medir h2 strong {
+    font-weight: bold;
+}
+
+/* Parágrafo */
+.como-medir p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Tabela */
+.como-medir-tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.como-medir-tabela td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* Texto de exemplo */
+.como-medir-exemplo {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/*fita metrica*/
+.fita-metrica {
+    display: flex;
+    justify-content: center;
+}
+
+.fita-metrica img {
+    margin-bottom: 40px;
+    height: 500px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .tabela-medidas2 .tabela-medidas-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tabela-medidas2 .tabela-medidas-descricao {
+        text-align: center;
+    }
+
+    .tabela-medidas2 .tabela-medidas-imagem {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .tabela-medidas2 .tabela-medidas-imagem img {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .como-medir h2 {
+        font-size: 28px;
+    }
+
+    .como-medir p, 
+    .como-medir-tabela td, 
+    .como-medir-exemplo {
+        font-size: 13px;
+    }
+
+    .fita-metrica img {
+        width: 100%;
+        height: 100%;
+    }
+}
