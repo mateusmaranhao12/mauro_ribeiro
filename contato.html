@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauro Ribeiro - Contato</title>
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/logo.png">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./imgs/logo.png" alt="Mauro Ribeiro">
+            </div>
+
+            <!-- Links -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">MASCULINO</a></li>
+                    <li><a href="#">FEMININO</a></li>
+                    <li><a href="#">PERSONALIZE</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bars-staggered"></i> MENU</a></li>
+                </ul>
+            </nav>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-box">
+                <input type="text" placeholder="Buscar produto">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Ícones de Perfil e Carrinho -->
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+
+                <!-- Carrinho de compras com contador -->
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </div>
+            </div>
+
+            <!-- Ícone do Menu Hambúrguer (Somente Mobile) -->
+            <div class="menu-hamburguer" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section class="fale-conosco">
+            <div class="container-contato">
+                <div class="fale-conosco-header">
+                    <h1>FALE <strong>CONOSCO</strong></h1>
+                    <p class="subtitulo">SELECIONE O ASSUNTO E ENVIE A SUA MENSAGEM:</p>
+                </div>
+
+                <div class="opcoes-contato">
+                    <label class="opcao">
+                        <input type="radio" name="assunto" checked>
+                        <span>FAÇA SEU UNIFORME PERSONALIZADO</span>
+                    </label>
+                    <label class="opcao">
+                        <input type="radio" name="assunto">
+                        <span>DÚVIDAS, CRÍTICAS OU ELOGIOS</span>
+                    </label>
+                    <label class="opcao">
+                        <input type="radio" name="assunto">
+                        <span>RECURSOS HUMANOS</span>
+                    </label>
+                </div>
+
+                <hr>
+
+                <form class="form-fale-conosco">
+                    <div class="campo-duplo">
+                        <div class="campo">
+                            <label for="modalidade">Modalidade*</label>
+                            <select id="modalidade" required>
+                                <option value="">Selecione</option>
+                                <option value="futebol">Futebol</option>
+                                <option value="basquete">Basquete</option>
+                                <option value="volei">Vôlei</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="nome">Nome completo*</label>
+                            <input type="text" id="nome" placeholder="Nome completo*" required>
+                        </div>
+                    </div>
+
+                    <div class="campo-duplo">
+                        <div class="campo">
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" placeholder="E-mail*" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefone">Telefone*</label>
+                            <input type="text" id="telefone" placeholder="Telefone*" required>
+                        </div>
+                    </div>
+
+                    <div class="campo-duplo">
+                        <div class="campo">
+                            <label for="cidade">Cidade*</label>
+                            <input type="text" id="cidade" placeholder="Cidade*" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="conheceu">Onde conheceu nossos produtos*</label>
+                            <select id="conheceu" required>
+                                <option value="">Selecione</option>
+                                <option value="instagram">Instagram</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="site">Site Oficial</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="descricao">Descreva os produtos e as quantidades desejadas*</label>
+                        <textarea id="descricao" placeholder="Descreva os produtos e as quantidades desejadas*"
+                            required></textarea>
+                    </div>
+
+                    <div class="campo">
+                        <label for="observacoes">Observações</label>
+                        <textarea id="observacoes" placeholder="Observações"></textarea>
+                    </div>
+
+                    <div class="recaptcha">
+                        <img src="./imgs/captcha.webp" alt="Captcha de verificação">
+                    </div>
+
+                    <div class="politica">
+                        <input type="checkbox" id="politica" required>
+                        <label for="politica">Concordo com as <a href="#">políticas de privacidade</a> e <a
+                                href="#">termos e condições</a>.</label>
+                    </div>
+
+                    <button type="submit" class="botao-enviar">ENVIAR</button>
+                </form>
+
+            </div>
+        </section>
+
+        <section class="informacoes-garantia">
+            <div class="overlay"></div>
+            <div class="conteudo-garantia">
+                <h2>INFORMAÇÕES SOBRE <br> <strong>GARANTIA DOS PRODUTOS</strong></h2>
+                <button class="botao-confirma">CONFIRA</button>
+            </div>
+        </section>
+
+        <section class="localizacao">
+            <div class="mapa-container">
+                <img src="./imgs/contato2.png" alt="Mapa da Localização">
+            </div>
+
+            <div class="info-localizacao">
+                <img src="imgs/contato_icone.png" alt="Ícone Localização">
+                <h3>LOCALIZAÇÃO</h3>
+                <p>Rua Ângelo Trevisan, 38, Cascatinha <br>
+                    Curitiba / PR - CEP 82025-255</p>
+                <button class="botao-localizacao">COMO CHEGAR</button>
+            </div>
+        </section>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="footer1">
+        <div class="footer-top">
+            <span>COMPARTILHANDO AVENTURAS:</span>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+            <div class="contact">
+                <i class="fa-regular fa-envelope"></i> faleconosco@mauroribeirosports.com.br
+            </div>
+        </div>
+
+        <div class="footer-bottom"></div>
+
+        <!-- seta do footer -->
+        <a href="#" class="arrow-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+    <footer class="footer2">
+        <div class="footer-container2">
+
+            <div class="footer-col2">
+                <h3><i class="fa-solid fa-location-dot"></i> CURITIBA / PR</h3>
+                <p>Rua Angelo Trevisan, 38<br>Cascatinha</p>
+                <p class="contatos"><i class="fas fa-phone"></i> (41) 3339-4684</p>
+                <p class="contatos"><i class="fab fa-whatsapp"></i> (41) 99522-8045</p>
+                <div class="payment-icons2">
+                    <img src="./imgs/faixa pagamento.png" alt="Formas de Pagamento">
+                </div>
+            </div>
+
+            <div class="footer-col2">
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">O atleta</a></li>
+                    <li><a href="#">Sala de imprensa</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>LOJISTAS</h3>
+                <ul>
+                    <li><a href="#">Quero ser um parceiro</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>SUPORTE / DÚVIDAS</h3>
+                <ul>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Dúvidas frequentes</a></li>
+                    <li><a href="#">Onde comprar</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Política de entregas</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 5: Outras informações -->
+            <div class="footer-col2">
+                <ul>
+                    <li><a href="#">Garantia MRS</a></li>
+                    <li><a href="#">Tabela de medidas feminina</a></li>
+                    <li><a href="#">Tabela de medidas masculina</a></li>
+                    <li><a href="#">Cuidados com os produtos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom2">
+            <p>© 2023 Mauro Ribeiro Sports - CNPJ 04.955.049/0001-59<br>Todos os Direitos Reservados</p>
+        </div>
+
+        <div class="footer-logo2">
+            <img src="./imgs/dosul.png">
+        </div>
+    </footer>
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>
