@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* Seção O Atleta */
+.o-atleta {
+    background: #f5f5f5;
+    padding: 0;
+}
+
+.o-atleta-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.o-atleta-imagem {
+    flex: 1;
+    overflow: hidden;
+}
+
+.o-atleta-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bloco de Texto */
+.o-atleta-texto {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 50px;
+    flex: 1;
+}
+
+.o-atleta-texto h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.o-atleta-texto h2 strong {
+    font-weight: bold;
+}
+
+.o-atleta-texto p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Seção O Início */
+.o-inicio {
+    background: #fff;
+    padding: 50px 0;
+}
+
+.o-inicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.o-inicio-texto {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.o-inicio-texto h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.o-inicio-texto h2 strong {
+    font-weight: bold;
+}
+
+.o-inicio-texto .subtitulo {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+    margin-top: 10px;
+}
+
+.o-inicio-texto .descricao {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.o-inicio-imagem {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.o-inicio-imagem img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Seção Disputa em Mundiais */
+.disputa-mundiais {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.disputa-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.disputa-container h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.disputa-container h2 strong {
+    font-weight: bold;
+}
+
+.disputa-anos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.disputa-item {
+    max-width: 350px;
+}
+
+.disputa-item h3 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.disputa-item .titulo {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.disputa-item .descricao {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Galeria de Ciclismo */
+.galeria-ciclismo {
+    width: 100%;
+    padding: 30px 0;
+    background: #fff;
+}
+
+.galeria-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.galeria-container img {
+    width: 33.33%;
+    height: auto;
+    object-fit: cover;
+}
+
+.auge-carreira {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.auge-carreira-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.auge-carreira h2 {
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.auge-carreira h2 strong {
+    font-weight: bold;
+}
+
+.auge-carreira-subtitulo {
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.auge-carreira-texto {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.auge-carreira-texto strong {
+    font-weight: bold;
+}
+
+/*nova fase*/
+.nova-fase {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #dad3cc;
+}
+
+.nova-fase-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
+
+.nova-fase-bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.nova-fase-bloco.texto {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.nova-fase-bloco h2 {
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    flex-direction: column;
+    text-align: start;
+}
+
+.nova-fase-bloco h2 strong {
+    font-weight: bold;
+}
+
+.nova-fase-bloco p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.nova-fase-bloco.imagem img {
+    width: 60%;
+    height: auto;
+}
+
+/*linha do tempo*/
+.linha-do-tempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.linha-do-tempo-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.linha-do-tempo-anos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.linha-do-tempo-anos .ano {
+    color: #b5b5b5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.linha-do-tempo-anos .ano.ativo {
+    color: black;
+    font-size: 30px;
+}
+
+.linha-do-tempo-anos .seta {
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.linha-do-tempo-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex: 1;
+}
+
+.imagem-linha-do-tempo img {
+    width: 280px;
+    border-radius: 10px;
+}
+
+.linha-do-tempo-info {
+    flex: 1;
+}
+
+.linha-do-tempo-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.linha-do-tempo-info p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.video-container img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/*responsividade*/
+@media (max-width: 768px) {
+    .o-atleta-container {
+        flex-direction: column;
+    }
+
+    .o-atleta-texto {
+        padding: 30px;
+    }
+
+    .o-atleta-texto h2 {
+        font-size: 28px;
+    }
+
+    .o-inicio-texto {
+        padding: 15px;
+    }
+
+    .o-inicio-texto h2 {
+        font-size: 28px;
+    }
+
+    .o-inicio-texto .descricao {
+        font-size: 14px;
+    }
+
+    .disputa-anos {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .disputa-item {
+        max-width: 100%;
+    }
+
+    .galeria-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .galeria-container img {
+        width: 100%;
+    }
+
+    .auge-carreira h2 {
+        font-size: 28px;
+    }
+
+    .auge-carreira-texto {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .nova-fase-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nova-fase-bloco {
+        padding: 20px;
+    }
+
+    .nova-fase-bloco h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .nova-fase-bloco p {
+        text-align: center;
+    }
+
+    .linha-do-tempo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .linha-do-tempo-anos {
+        flex-direction: row;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .imagem-linha-do-tempo img {
+        width: 200px;
+    }
+
+    .linha-do-tempo-content {
+        flex-direction: column;
+    }
+}
