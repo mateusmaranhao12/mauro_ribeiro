@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
+    align-items: stretch;
+}
+
+/* Sala de Imprensa */
+.sala_imprensa {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: url('../imgs/imprensa1.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Camada de Overlay para garantir leitura do texto */
+.sala_imprensa-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 85px 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização do título */
+.sala_imprensa h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.sala_imprensa h2 strong {
+    font-weight: 700;
+}
+
+/* Parágrafo com descrição */
+.sala_imprensa p {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/*Filtrar*/
+.imprensa-filtrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+    border-bottom: 1px solid black;
+}
+
+/* Botão de filtro */
+.filtro-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.botao-filtrar {
+    background: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-right: 2px solid black;
+}
+
+.botao-filtrar i {
+    font-size: 14px;
+}
+
+/* Filtrar */
+.imprensa-filtrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.filtro-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.botao-filtrar {
+    background: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    border-right: 1px solid black;
+    border-radius: 25px 0 0 25px;
+}
+
+.imprensa-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+}
+
+.imprensa-select-box {
+    background: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: center;
+    width: 140px;
+}
+
+.imprensa-select i {
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+    font-size: 14px;
+}
+
+.imprensa-select-box:focus {
+    outline: none;
+}
+
+.baixar {
+    padding: 20px 0;
+}
+
+.baixar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.baixar-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.categoria {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.baixar-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.data {
+    font-size: 12px;
+    color: #666;
+    display: block;
+}
+
+.baixar-content {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.baixar-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0;
+}
+
+.botao-baixar {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.botao-baixar:hover {
+    background: #333;
+}
+
+/* Seção do botão "Carregar Mais" */
+.carregar-mais {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+/* Botão carregar */
+.botao-carregar {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+/* Ícone */
+.botao-carregar i {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.botao-carregar:hover i {
+    transform: translateY(3px);
+}

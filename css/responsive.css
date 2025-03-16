@@ -422,7 +422,8 @@
         width: 100%;
     }
 
-    .marcas-container, .upload-container {
+    .marcas-container,
+    .upload-container {
         grid-template-columns: 1fr;
         flex-direction: column;
     }
@@ -437,8 +438,49 @@
         margin-top: 5px;
     }
 
+    .mensagem-container textarea {
+        height: 80px;
+    }
+
+    .recaptcha-container,
+    .politica-termos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .politica-termos {
+        gap: 10px;
+    }
+
     .botao-enviar {
         width: 100%;
+    }
+
+    .sala_imprensa {
+        height: 200px;
+    }
+
+    .sala_imprensa h2 {
+        font-size: 24px;
+    }
+
+    .sala_imprensa p {
+        font-size: 12px;
+    }
+
+    .baixar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .baixar-botao {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .botao-baixar {
+        width: 100%;
+        justify-content: center;
     }
 
 }
@@ -634,5 +676,9 @@
 
     .bermudas {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sala_imprensa-overlay {
+        background: none;
     }
 }
