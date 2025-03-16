@@ -483,6 +483,15 @@
         justify-content: center;
     }
 
+    .beneficios-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .beneficio {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 900px) {
