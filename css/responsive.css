@@ -383,6 +383,64 @@
         text-align: left;
     }
 
+    .revendedor-autorizado h2 {
+        font-size: 100%;
+    }
+
+    .dados-loja {
+        padding: 10px;
+    }
+
+    .dados-loja h3 {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .opcoes-loja {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .opcao {
+        width: 100%;
+    }
+
+    .campo-duplo,
+    .campo-triple,
+    .campo-quatro {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo-duplo input,
+    .campo-triple input,
+    .campo-quatro input,
+    .campo-quatro select {
+        width: 100%;
+    }
+
+    .marcas-container, .upload-container {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .upload-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .upload-btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .botao-enviar {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 900px) {

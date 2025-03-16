@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauro Ribeiro - Revendedor</title>
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/logo.png">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/revendedor.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./imgs/logo.png" alt="Mauro Ribeiro">
+            </div>
+
+            <!-- Links -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">MASCULINO</a></li>
+                    <li><a href="#">FEMININO</a></li>
+                    <li><a href="#">PERSONALIZE</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bars-staggered"></i> MENU</a></li>
+                </ul>
+            </nav>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-box">
+                <input type="text" placeholder="Buscar produto">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Ícones de Perfil e Carrinho -->
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+
+                <!-- Carrinho de compras com contador -->
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </div>
+            </div>
+
+            <!-- Ícone do Menu Hambúrguer (Somente Mobile) -->
+            <div class="menu-hamburguer" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="revendedor-autorizado">
+            <h2>QUERO SER UM <strong>REVENDEDOR AUTORIZADO</strong></h2>
+            <p>EXPERIÊNCIA, QUALIDADE E TECNOLOGIA</p>
+            <p>FORMANDO PARCERIAS DE SUCESSO.</p>
+        </div>
+
+        <div class="dados-loja">
+            <h3>01. DADOS DA LOJA</h3>
+
+            <div class="opcoes-loja">
+                <label class="opcao">
+                    <input type="radio" name="tipo-loja" checked>
+                    <span>POSSO SOMENTE LOJA FÍSICA</span>
+                </label>
+                <label class="opcao">
+                    <input type="radio" name="tipo-loja">
+                    <span>POSSO SOMENTE LOJA ON-LINE</span>
+                </label>
+                <label class="opcao">
+                    <input type="radio" name="tipo-loja">
+                    <span>POSSO LOJA FÍSICA E LOJA ON-LINE</span>
+                </label>
+            </div>
+
+            <form class="formulario-loja">
+                <div class="campo-duplo">
+                    <input type="text" placeholder="Razão social*" required>
+                    <input type="text" placeholder="Nome fantasia*" required>
+                </div>
+                <div class="campo-duplo">
+                    <input type="date" placeholder="Data de abertura*" required>
+                    <input type="text" placeholder="CNPJ*" required>
+                    <input type="text" placeholder="Inscrição estadual*" required>
+                </div>
+                <div class="campo">
+                    <input type="text" placeholder="Endereço*" required>
+                </div>
+                <div class="campo-triple">
+                    <input type="text" placeholder="Número*" required>
+                    <input type="text" placeholder="Complemento*">
+                </div>
+                <div class="campo-quatro">
+                    <input type="text" placeholder="Bairro" required>
+                    <input type="text" placeholder="Cidade" required>
+                    <input type="text" placeholder="CEP" required>
+                    <select required>
+                        <option value="">Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="campo-triple">
+                    <input type="text" placeholder="Telefone fixo">
+                    <input type="text" placeholder="Telefone">
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div class="campo">
+                    <input type="text" placeholder="Nome completo do responsável pela loja" required>
+                </div>
+            </form>
+        </div>
+
+        <div class="suframa">
+            <h3>02. SUFRAMA</h3>
+
+            <div class="opcoes-suframa">
+                <label class="opcao-suframa">
+                    <input type="radio" name="suframa" checked>
+                    <span>SIM</span>
+                </label>
+                <label class="opcao-suframa">
+                    <input type="radio" name="suframa">
+                    <span>NÃO</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="marcas-trabalhadas">
+            <h3>03. MARCAS TRABALHADAS</h3>
+            <div class="marcas-container">
+                <div class="campo-marca">
+                    <label>Acessórios</label>
+                    <textarea placeholder="Digite as marcas de acessórios"></textarea>
+                </div>
+                <div class="campo-marca">
+                    <label>Bicicletas</label>
+                    <textarea placeholder="Digite as marcas de bicicletas"></textarea>
+                </div>
+                <div class="campo-marca">
+                    <label>Componentes*</label>
+                    <textarea placeholder="Digite as marcas de componentes" required></textarea>
+                </div>
+                <div class="campo-marca">
+                    <label>Roupas</label>
+                    <textarea placeholder="Digite as marcas de roupas"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="imagens-loja">
+            <h3>04. IMAGENS DA LOJA</h3>
+            <p>Anexe as fotos (Formato de imagem permitido: JPEG de até 1MB)</p>
+
+            <div class="upload-container">
+                <div class="upload-box">
+                    <label class="upload-label">FACHADA DA LOJA</label>
+                    <input type="file" id="fachada" accept="image/jpeg" hidden>
+                    <span id="fachada-nome">Nenhuma imagem selecionada</span>
+                    <button class="upload-btn" onclick="document.getElementById('fachada').click()">BUSCAR FOTO</button>
+                </div>
+                <div class="upload-box">
+                    <label class="upload-label">INTERIOR DA LOJA</label>
+                    <input type="file" id="interior" accept="image/jpeg" hidden>
+                    <span id="interior-nome">Nenhuma imagem selecionada</span>
+                    <button class="upload-btn" onclick="document.getElementById('interior').click()">BUSCAR
+                        FOTO</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mensagem-observacao">
+            <h3>05. MENSAGEM / OBSERVAÇÃO</h3>
+
+            <div class="mensagem-container">
+                <label for="mensagem">Digite sua mensagem ou observação</label>
+                <textarea id="mensagem" placeholder="Digite aqui..."></textarea>
+            </div>
+
+            <div class="recaptcha-container">
+                <!-- Simulação do reCAPTCHA -->
+                <div class="recaptcha-fake">
+                    <input type="checkbox" id="recaptcha">
+                    <label for="recaptcha">Não sou um robô</label>
+                    <div class="recaptcha-info">reCAPTCHA <br>Privacidade - Termos</div>
+                </div>
+            </div>
+
+            <div class="politica-termos">
+                <input type="checkbox" id="politica">
+                <label for="politica">Concordo com as <a href="#">políticas de privacidade</a> e <a href="#">termos e
+                        condições</a>.</label>
+            </div>
+
+            <button class="botao-enviar">ENVIAR</button>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="footer1">
+        <div class="footer-top">
+            <span>COMPARTILHANDO AVENTURAS:</span>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+            <div class="contact">
+                <i class="fa-regular fa-envelope"></i> faleconosco@mauroribeirosports.com.br
+            </div>
+        </div>
+
+        <div class="footer-bottom"></div>
+
+        <!-- seta do footer -->
+        <a href="#" class="arrow-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+    <footer class="footer2">
+        <div class="footer-container2">
+
+            <div class="footer-col2">
+                <h3><i class="fa-solid fa-location-dot"></i> CURITIBA / PR</h3>
+                <p>Rua Angelo Trevisan, 38<br>Cascatinha</p>
+                <p class="contatos"><i class="fas fa-phone"></i> (41) 3339-4684</p>
+                <p class="contatos"><i class="fab fa-whatsapp"></i> (41) 99522-8045</p>
+                <div class="payment-icons2">
+                    <img src="./imgs/faixa pagamento.png" alt="Formas de Pagamento">
+                </div>
+            </div>
+
+            <div class="footer-col2">
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">O atleta</a></li>
+                    <li><a href="#">Sala de imprensa</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>LOJISTAS</h3>
+                <ul>
+                    <li><a href="#">Quero ser um parceiro</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>SUPORTE / DÚVIDAS</h3>
+                <ul>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Dúvidas frequentes</a></li>
+                    <li><a href="#">Onde comprar</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Política de entregas</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 5: Outras informações -->
+            <div class="footer-col2">
+                <ul>
+                    <li><a href="#">Garantia MRS</a></li>
+                    <li><a href="#">Tabela de medidas feminina</a></li>
+                    <li><a href="#">Tabela de medidas masculina</a></li>
+                    <li><a href="#">Cuidados com os produtos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom2">
+            <p>© 2023 Mauro Ribeiro Sports - CNPJ 04.955.049/0001-59<br>Todos os Direitos Reservados</p>
+        </div>
+
+        <div class="footer-logo2">
+            <img src="./imgs/dosul.png">
+        </div>
+    </footer>
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>
