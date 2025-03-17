@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/*imagem grande*/
+.imagem-grande {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-grande img {
+    margin-bottom: 40px;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Seção Personalizados */
+.personalizados {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.personalizados-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Título */
+.personalizados h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.personalizados h2 strong {
+    font-weight: bold;
+}
+
+/* Texto Principal */
+.personalizados-texto {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Texto em Destaque */
+.personalizados-destaque {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Seção Diferenciais */
+.diferenciais {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.diferenciais-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Título */
+.diferenciais h2 {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Grid de Diferenciais */
+.diferenciais-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Item Diferencial */
+.diferencial-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.diferencial-item img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.diferencial-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Linha Divisória */
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Seção Blusas */
+.blusas {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.blusas-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blusas h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Slider */
+.blusas-slider {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+
+/* Itens do Slider */
+.blusa-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+.blusa-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blusa-item p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blusa-item-bretelles {
+    background: #f5f5f5;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.blusa-item-bretelles img {
+    width: 100%;
+    height: 280px;
+    display: block;
+    width: 250px;
+}
+
+.bretelles-container {
+    display: flex;
+    justify-content: center;
+}
+
+.blusa-item-bretelles p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Ajuste dos Botões para o Canto Superior Direito */
+.blusas-controles {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Botão Esquerdo (Desativado) */
+.blusas-prev {
+    background: #d1d1d1;
+    color: white;
+    border: none;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Botão Direito (Ativado) */
+.blusas-next {
+    background: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Estilização da seção COMO PERSONALIZAR */
+.como-personalizar {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.como-personalizar h2 {
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.como-personalizar h2 strong {
+    font-weight: bold;
+}
+
+.como-personalizar-alertas {
+    margin-bottom: 30px;
+}
+
+.alerta {
+    display: block;
+    background: #FFD700;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.como-personalizar-etapas {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.etapa {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.etapa:last-child {
+    border-right: none;
+}
+
+.etapa h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.etapa h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.etapa p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Estilização da seção solicite */
+.solicite {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.solicite-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.solicite h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.solicite strong {
+    font-weight: 800;
+}
+
+.solicite-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.solicite-form {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.solicite-form label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.solicite-form input,
+.solicite-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.solicite-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.botao-enviar {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.botao-enviar:hover {
+    background-color: #333;
+}
+
+.solicite-contato {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.solicite-contato p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.solicite-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.solicite-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.solicite-item:hover {
+    background: #e0e0e0;
+}
+
+.solicite-item i {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.solicite-item span {
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.seta {
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+/* Estilização da seção depoimentos */
+.depoimentos {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.depoimentos-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.depoimentos h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.depoimentos-numero {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.depoimentos-texto {
+    font-style: italic;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.depoimentos-autor {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.depoimentos-controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.depoimentos-anterior,
+.depoimentos-proximo {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.depoimentos-anterior:hover,
+.depoimentos-proximo:hover {
+    color: #555;
+}
+
+.depoimentos-indicadores {
+    display: flex;
+    gap: 5px;
+}
+
+.indicador {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background 0.3s;
+}
+
+.indicador.ativo {
+    background-color: #000;
+}
+
+
+/* Responsividade para Mobile */
+@media (max-width: 600px) {
+    .personalizados h2 {
+        font-size: 28px;
+    }
+
+    .personalizados-texto,
+    .personalizados-destaque {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .diferenciais-grid {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .diferencial-item {
+        width: 100%;
+    }
+
+    .blusas-slider {
+        flex-direction: column;
+        gap: 15px;
+        white-space: normal;
+    }
+
+    .blusa-item {
+        min-width: 100%;
+    }
+
+    .blusas-prev,
+    .blusas-next {
+        display: none;
+    }
+
+    .blusa-item-bretelles img {
+        width: auto;
+        height: 180px;
+        margin: 0 auto;
+    }
+
+    .como-personalizar-etapas {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .etapa {
+        border-right: none;
+    }
+}
