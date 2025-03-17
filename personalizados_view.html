@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauro Ribeiro - Personalizados View</title>
+    <link rel="shortcut icon" type="imagex/png" href="./imgs/logo.png">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/personalizados_view.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="./imgs/logo.png" alt="Mauro Ribeiro">
+            </div>
+
+            <!-- Links -->
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">MASCULINO</a></li>
+                    <li><a href="#">FEMININO</a></li>
+                    <li><a href="#">PERSONALIZE</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bars-staggered"></i> MENU</a></li>
+                </ul>
+            </nav>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-box">
+                <input type="text" placeholder="Buscar produto">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+
+            <!-- Ícones de Perfil e Carrinho -->
+            <div class="icons">
+                <i class="fa-regular fa-user"></i>
+
+                <!-- Carrinho de compras com contador -->
+                <div class="cart-container">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">2</span>
+                </div>
+            </div>
+
+            <!-- Ícone do Menu Hambúrguer (Somente Mobile) -->
+            <div class="menu-hamburguer" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+
+        <section class="produto">
+            <div class="produto-container">
+                <div class="produto-imagem">
+                    <img src="./imgs/view1.png" alt="Camisa Frente">
+                    <img src="./imgs/view2.png" alt="Camisa Costas">
+                </div>
+                <div class="produto-info">
+                    <div class="produto-preco">
+                        <h3>VALOR POR PEÇA <strong>R$125,90</strong></h3>
+                    </div>
+                    <div class="produto-detalhes">
+                        <div class="produto-item">
+                            <img src="./imgs/view3.png" alt="Zíper Inteligente">
+                            <div>
+                                <span>01</span>
+                                <h4>ZÍPER INTELIGENTE</h4>
+                                <p>Travamento no cursor que facilita o processo de abrir e fechar</p>
+                            </div>
+                        </div>
+                        <div class="produto-item">
+                            <img src="./imgs/view4.png" alt="Fita Italiana">
+                            <div>
+                                <span>02</span>
+                                <h4>FITA ITALIANA</h4>
+                                <p>Alta aderência que impede a movimentação da peça</p>
+                            </div>
+                        </div>
+                        <div class="produto-item">
+                            <img src="./imgs/view5.png" alt="Barra em Elástico">
+                            <div>
+                                <span>03</span>
+                                <h4>BARRA EM ELÁSTICO</h4>
+                                <p>Maior fixação da peça no corpo, proporcionando conforto</p>
+                            </div>
+                        </div>
+                        <div class="produto-item">
+                            <img src="./imgs/view6.png" alt="Fita refletiva">
+                            <div>
+                                <span>04</span>
+                                <h4>FITA REFLETIVA</h4>
+                                <p>Partículas refletivas a 150m de distância</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="produto-descricao">
+            <h2>CAMISA ÁGIL</h2>
+            <p><strong>Ideal para quem está iniciando no ciclismo</strong>, a Ágil foi desenvolvida pensando no
+                maior custo-benefício para o ciclista iniciante. Ela une conforto, performance e valor.</p>
+            <p>O tecido Racing nas laterais e mangas possui tecnologia de diminuição de atrito com o ar, aumentando
+                a eficiência da troca de calor e proporcionando maior aderência da peça. Já o corpo é utilizado o
+                tecido Game, proporcionando o gerenciamento de umidade.</p>
+                
+            <div class="como-personalizar-alertas">
+                <span class="alerta">
+                    <i class="fa-solid fa-triangle-exclamation"></i> PEDIDO MÍNIMO: <strong>12 PEÇAS IGUAIS POR
+                        PRODUTO</strong>
+                </span>
+                <span class="alerta">
+                    <i class="fa-solid fa-triangle-exclamation"></i> PEDIDO MÍNIMO PARA ATLETAS FEDERADOS*:
+                    <strong>6 PEÇAS IGUAIS E DO MESMO TAMANHO POR
+                        PRODUTO</strong>
+                </span>
+                <p>*Necessário <strong>comprovar</strong> por meio de documento oficial.</p>
+            </div>
+        </div>
+
+        <section class="solicite">
+            <div class="solicite-container">
+                <h2><strong>SOLICITE</strong> SEU UNIFORME PERSONALIZADO</h2>
+
+                <div class="solicite-content">
+                    <form class="solicite-form">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Nome" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="E-mail" required>
+
+                        <label for="cidade">Cidade Estado</label>
+                        <input type="text" id="cidade" placeholder="Cidade Estado" required>
+
+                        <label for="descricao">Quais produtos deseja? Envie o nome e descreva o que mais achar
+                            necessário.</label>
+                        <textarea id="descricao" placeholder="Quais produtos deseja?" required></textarea>
+
+                        <button type="submit" class="botao-enviar">ENVIAR</button>
+                    </form>
+
+                    <div class="solicite-contato">
+                        <p>SE PREFERIR, SOLICITE POR <br>
+                            <strong>TELEFONE, WHATSAPP OU E-MAIL:</strong>
+                        </p>
+
+                        <div class="solicite-opcoes">
+                            <div class="solicite-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>(41) 3339-4684</span>
+                                <span class="seta">→</span>
+                            </div>
+                            <div class="solicite-item">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <span>(41) 99522-8045</span>
+                                <span class="seta">→</span>
+                            </div>
+                            <div class="solicite-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>faleconosco@mauorribeirosports.com.br</span>
+                                <span class="seta">→</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="footer1">
+        <div class="footer-top">
+            <span>COMPARTILHANDO AVENTURAS:</span>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fas fa-bolt"></i>
+            </div>
+            <div class="contact">
+                <i class="fa-regular fa-envelope"></i> faleconosco@mauroribeirosports.com.br
+            </div>
+        </div>
+
+        <div class="footer-bottom"></div>
+
+        <!-- seta do footer -->
+        <a href="#" class="arrow-top">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+    </footer>
+    <footer class="footer2">
+        <div class="footer-container2">
+
+            <div class="footer-col2">
+                <h3><i class="fa-solid fa-location-dot"></i> CURITIBA / PR</h3>
+                <p>Rua Angelo Trevisan, 38<br>Cascatinha</p>
+                <p class="contatos"><i class="fas fa-phone"></i> (41) 3339-4684</p>
+                <p class="contatos"><i class="fab fa-whatsapp"></i> (41) 99522-8045</p>
+                <div class="payment-icons2">
+                    <img src="./imgs/faixa pagamento.png" alt="Formas de Pagamento">
+                </div>
+            </div>
+
+            <div class="footer-col2">
+                <h3>INSTITUCIONAL</h3>
+                <ul>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">O atleta</a></li>
+                    <li><a href="#">Sala de imprensa</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>LOJISTAS</h3>
+                <ul>
+                    <li><a href="#">Quero ser um parceiro</a></li>
+                    <li><a href="#">Meus pedidos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col2">
+                <h3>SUPORTE / DÚVIDAS</h3>
+                <ul>
+                    <li><a href="#">Fale conosco</a></li>
+                    <li><a href="#">Dúvidas frequentes</a></li>
+                    <li><a href="#">Onde comprar</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Política de entregas</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 5: Outras informações -->
+            <div class="footer-col2">
+                <ul>
+                    <li><a href="#">Garantia MRS</a></li>
+                    <li><a href="#">Tabela de medidas feminina</a></li>
+                    <li><a href="#">Tabela de medidas masculina</a></li>
+                    <li><a href="#">Cuidados com os produtos</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom2">
+            <p>© 2023 Mauro Ribeiro Sports - CNPJ 04.955.049/0001-59<br>Todos os Direitos Reservados</p>
+        </div>
+
+        <div class="footer-logo2">
+            <img src="./imgs/dosul.png">
+        </div>
+    </footer>
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>
